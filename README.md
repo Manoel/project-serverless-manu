@@ -12,11 +12,26 @@ authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 
 # Serverless Framework Node HTTP API on AWS
 
-This template demonstrates how to make a simple HTTP API with Node.js running on AWS Lambda and API Gateway using the Serverless Framework.
+This repository demonstrates how to make a simple HTTP API with Node.js running on AWS Lambda and API Gateway using the Serverless Framework.
 
-This template does not include any kind of persistence (database). For more advanced examples, check out the [serverless/examples repository](https://github.com/serverless/examples/) which includes Typescript, Mongo, DynamoDB and other examples.
+This template does not include any kind of persistence (database). In this project we will create an AWS cloud infrastructure with API Gateway, DynamoDB, AWS Lambda and AWS CloudFormation using the Serverless framework for development based on Infrastructure as a Code.<br></br>
 
 ## Usage
+
+Prerequisites:
+
+*  have an AWS account and install **[Node.js](https://nodejs.org/en)**  on the machine.
+* Install the **[AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)**<br></br>
+
+## Initial Setup
+
+### AWS Credentials
+* Create user: AWS Management Console -> IAM Dashboard -> Create New User -> "username" -> Permissions "Administrator Access" -> Programmatic Access -> Dowload Keys
+* In terminal: ```$ aws configure``` -> paste previously generated credentials
+
+### Configure the Serverless framework
+```$ npm i -g serverless```
+
 
 ### Deployment
 
